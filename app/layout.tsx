@@ -20,7 +20,7 @@ export default async function RootLayout({
             <Login />
           ) : (
             <div className="grid grid-cols-[1fr_3fr]">
-              <div className="bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
+              <div className="bg-[#202123] h-screen overflow-y-auto md:min-w-[20rem]">
                 <SideBar />
               </div>
               {/* ClientProvider-Notification */}
