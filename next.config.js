@@ -5,6 +5,10 @@ module.exports = {
     appDir: true,
   },
   images: {
-    domains: ["https://links.papareact.com"],
+    domains: [
+      "https://links.papareact.com",
+      "upload.wikimedia.org",
+      "cdn-icons-png.flaticon.com",
+    ],
   },
 };
