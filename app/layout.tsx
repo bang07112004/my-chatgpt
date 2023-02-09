@@ -19,7 +19,7 @@ export default async function RootLayout({
           {!session ? (
             <Login />
           ) : (
-            <div className="flex">
+            <div className="grid grid-cols-[1fr_3fr]">
               <div className="bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
                 <SideBar />
               </div>
