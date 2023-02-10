@@ -25,7 +25,7 @@ function SideBar() {
           <div className="hidden sm:inline">
             <ModelSelection />
           </div>
-          <div className="flex flex-row md:flex-col space-y-2 my-2">
+          <div className="flex flex-row md:flex-col space-y-2 md:my-2">
             {loading && (
               <div className="animate-pulse text-center text-white flex items-center gap-2">
                 <img src={load.src} alt="" className="w-20 h-20" />
@@ -49,7 +49,7 @@ function SideBar() {
           />
           <button
             onClick={() => signOut()}
-            className="text-white select-none shadow-md shadow-black px-4 py-3 mx-auto my-4 hover:opacity-50 rounded-xl transition-all duration-300"
+            className="text-white select-none shadow-md shadow-black px-4 py-3 mx-auto md:my-4 hover:opacity-50 rounded-xl transition-all duration-300"
           >
             Sign Out
           </button>
