@@ -16,18 +16,18 @@ export default async function RootLayout({
       <head />
       <body>
         <SessionProvider session={session}>
-          {/* {!session ? (
+          {!session ? (
             <Login />
-          ) : ( */}
-          <div className="flex flex-col md:flex-row">
-            <div className="bg-[#202123] md:max-w-xs w-full md:h-screen md:max-h-screen max-h-24 overflow-y-auto md:min-w-[20rem]">
-              <SideBar />
+          ) : (
+            <div className="flex flex-col md:flex-row">
+              <div className="bg-[#202123] md:max-w-xs w-full md:h-screen md:max-h-screen max-h-24 overflow-x-auto md:overflow-x-hidden overflow-y-hidden md:overflow-y-auto md:min-w-[20rem]">
+                <SideBar />
+              </div>
+              {/* ClientProvider-Notification */}
+              <ClientProvider />
+              <div className="bg-[#343541] w-full md:flex-1"> {children}</div>
             </div>
-            {/* ClientProvider-Notification */}
-            <ClientProvider />
-            <div className="bg-[#343541] w-full md:flex-1"> {children}</div>
-          </div>
-          {/* )} */}
+          )}
         </SessionProvider>
       </body>
     </html>
