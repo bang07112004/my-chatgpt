@@ -40,7 +40,7 @@ function SideBar() {
         </div>
       </div>
       {session && (
-        <div className="flex md:flex-col">
+        <div className="flex flex-row items-start md:flex-col">
           <img
             src={session.user?.image!}
             alt="avatar"
