@@ -18,8 +18,8 @@ function SideBar() {
   );
 
   return (
-    <div className="p-2 flex flex-col h-screen">
-      <div className="flex-1 flex md:flex-col">
+    <div className="p-2 flex sm:flex-row md:flex-col h-screen">
+      <div className="flex-1 flex sm:flex-row md:flex-col">
         <div>
           {/* NewChat */}
           <NewChat />
@@ -28,7 +28,7 @@ function SideBar() {
 
             <ModelSelection />
           </div>
-          <div className="flex flex-col space-y-2 my-2">
+          <div className="flex sm:flex-row md:flex-col space-y-2 my-2">
             {loading && (
               <div className="animate-pulse text-center text-white flex items-center gap-2">
                 <img src={load.src} alt="" className="w-20 h-20" />
@@ -43,7 +43,7 @@ function SideBar() {
         </div>
       </div>
       {session && (
-        <div className="flex flex-col">
+        <div className="flex sm:flex-row md:flex-col">
           <img
             src={session.user?.image!}
             alt="avatar"
