@@ -20,7 +20,7 @@ function SideBar() {
   return (
     <div className="p-2 flex flex-row md:flex-col h-screen">
       <div className="flex-1 flex md:flex-col">
-        <div className="flex md:flex-col flex-row">
+        <div className="flex md:flex-col flex-row space-x-2 md:space-x-0">
           <NewChat />
           <div className="hidden sm:inline">
             <ModelSelection />
@@ -40,7 +40,7 @@ function SideBar() {
         </div>
       </div>
       {session && (
-        <div className="flex flex-row items-start md:flex-col">
+        <div className="flex flex-row items-start mx-2 mt-3 md:mt-0 md:flex-col">
           <img
             src={session.user?.image!}
             alt="avatar"
