@@ -44,7 +44,7 @@ function SideBar() {
           <img
             src={session.user?.image!}
             alt="avatar"
-            className="h-12 w-12 md:h-20 md:w-20 rounded-full cursor-pointer mx-auto"
+            className="h-12 w-12 md:h-20 md:w-20 rounded-full cursor-pointer mr-2 md:mr-0 mx-auto"
             title={session.user?.name!}
           />
           <button
