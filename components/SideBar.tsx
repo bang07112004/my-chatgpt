@@ -25,7 +25,7 @@ function SideBar() {
           <div className="hidden sm:inline">
             <ModelSelection />
           </div>
-          <div className="flex md:flex-col space-y-2 my-2">
+          <div className="flex flex-row md:flex-col space-y-2 my-2">
             {loading && (
               <div className="animate-pulse text-center text-white flex items-center gap-2">
                 <img src={load.src} alt="" className="w-20 h-20" />
@@ -40,7 +40,7 @@ function SideBar() {
         </div>
       </div>
       {session && (
-        <div className="flex sm:flex-row md:flex-col">
+        <div className="flex md:flex-col">
           <img
             src={session.user?.image!}
             alt="avatar"
