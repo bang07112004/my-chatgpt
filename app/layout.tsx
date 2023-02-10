@@ -20,12 +20,12 @@ export default async function RootLayout({
             <Login />
           ) : (
             <div className="flex">
-              <div className="bg-[#202123] h-screen overflow-y-auto md:min-w-[20rem]">
+              <div className="bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
                 <SideBar />
               </div>
               {/* ClientProvider-Notification */}
               <ClientProvider />
-              <div className="bg-[#343541] w-full"> {children}</div>
+              <div className="bg-[#343541] w-full md:flex-1"> {children}</div>
             </div>
           )}
         </SessionProvider>
