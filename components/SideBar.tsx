@@ -19,8 +19,8 @@ function SideBar() {
 
   return (
     <div className="p-2 flex flex-row md:flex-col h-screen">
-      <div className="flex-1 flex flex-row md:flex-col">
-        <div>
+      <div className="md:flex-1 flex flex-row md:flex-col">
+        <div className="flex md:flex-col flex-row">
           <NewChat />
           <div className="hidden sm:inline">
             <ModelSelection />
