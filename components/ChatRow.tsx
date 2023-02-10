@@ -28,7 +28,7 @@ function ChatRow({ id }: Props) {
   return (
     <Link
       href={`/chat/${id}`}
-      className={`chatRow md:justify-center ${
+      className={`chatRow md:justify-center items-start ${
         active && "bg-transparent shadow-md shadow-black my-3"
       }`}
     >
