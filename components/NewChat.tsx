@@ -21,7 +21,7 @@ function NewChat() {
   return (
     <div
       onClick={createNewChat}
-      className="text-white flex group text-lg font-semibold hover:scale-y-110 items-center justify-center gap-2 shadow-md shadow-black hover:shadow-lg hover:shadow-black px-4 py-3 mx-auto my-2 opacity-70 hover:opacity-100 rounded-xl transition-all duration-300 select-none cursor-pointer"
+      className="text-white flex group items-start text-lg font-semibold hover:scale-y-110 md:items-center justify-center gap-2 shadow-md shadow-black hover:shadow-lg hover:shadow-black px-4 py-3 mx-auto my-2 opacity-70 hover:opacity-100 rounded-xl transition-all duration-300 select-none cursor-pointer"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
