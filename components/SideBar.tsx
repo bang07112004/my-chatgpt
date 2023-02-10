@@ -49,7 +49,7 @@ function SideBar() {
           />
           <button
             onClick={() => signOut()}
-            className="text-white select-none shadow-md shadow-black px-4 py-3 mx-auto md:my-4 hover:opacity-50 rounded-xl transition-all duration-300"
+            className="text-white select-none shadow-md shadow-black px-4 py-3 mx-auto md:my-4 my-2 hover:opacity-50 rounded-xl transition-all duration-300"
           >
             Sign Out
           </button>
