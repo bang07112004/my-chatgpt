@@ -29,7 +29,7 @@ function ChatRow({ id }: Props) {
     <Link
       href={`/chat/${id}`}
       className={`chatRow md:justify-center items-start ${
-        active && "bg-transparent shadow-md shadow-black my-3"
+        active && "bg-transparent shadow-md shadow-black md:my-3"
       }`}
     >
       <svg
